@@ -82,11 +82,14 @@ WSGI_APPLICATION = 'Medicine_Donation_System_for_NGOs.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'database' / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'NGO',
+        'USER': 'root',
+        'PASSWORD': '',
+        'HOST': '127.0.0.1',
+        'PORT':' 3306'  
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/4.0/ref/settings/#auth-password-validators
